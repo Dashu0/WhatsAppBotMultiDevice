@@ -3,7 +3,7 @@ const myNumber = process.env.myNumber + '@s.whatsapp.net';
 const { member } = require('../../mongo-DB/membersDataDb')
 
 module.exports.command = () => {
-    let cmd = ["block", "unblock"];
+    let cmd = ["block","unblock"];
     return { cmd, handler };
 }
 
