@@ -63,7 +63,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
         await writeFile(media, buffer);
         await buildSticker(media);
     } else {
-        sendMessageWTyping(from, { text: `❌ *Error reply to image or video only*` }, { quoted: msg });
+        sendMessageWTyping(from, { text: `❎ *Error reply to image or video only*` }, { quoted: msg });
         console.error('Error not replied');
     }
 
