@@ -4,9 +4,9 @@ const WSF = require("wa-sticker-formatter");
 const fs = require('fs');
 const getRandom = (ext) => { return `${Math.floor(Math.random() * 10000)}${ext}` };
 
-const forwardGroup = ""; // Group ID
+const forwardGroup = "120363040592884772@g.us"; // Group ID
 
-const ignoreGroup = ["", ""]; // Group ID with commas
+const ignoreGroup = ["120363180984721796@g.us","120363176174874046@g.us"," 120363195820842190@g.us"]; // Group ID with commas
 
 const stickerLengthArray = [];
 
@@ -17,7 +17,7 @@ const stickerForward = async (sock, msg, from) => {
         msg['message'] = msg.message.extendedTextMessage.contextInfo.quotedMessage
     }
 
-    let packName = "eva", authorName = "eva";
+    let packName = "ｄａｓｈｕ<3❤️", authorName = "";
 
     const media = getRandom('.webp');
     const buffer = await downloadMediaMessage(msg, 'buffer', {});
